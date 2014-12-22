@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.main {
+#wrapper {
 	background-image: url('../images/background.jpg');
   	background-position: center bottom;
   	background-repeat: no-repeat; 
@@ -16,7 +16,7 @@ body {
 
 }
 
-.textbox {
+#item {
 	background-color: #F8FDFF;
     border:solid 1px #BFBDBD;
     border-radius: 4px;
@@ -28,7 +28,7 @@ body {
     box-shadow: 2px 2px 0 #828181 inset;
 }
 
-.main h1 {
+ h1 {
 	font-size: 3.125rem;
 	margin-top: 1.5rem;
 	margin-left: 50px;
@@ -46,7 +46,7 @@ body {
 	color: white;
 }
 
-button {
+#add-item {
 	background-color: #D7725F;
     border:solid 1px #F8FDFF;
     border-radius: 4px;
@@ -56,37 +56,120 @@ button {
     margin-left: 20px;
     width: 150px;
     font-size: 15px;
-
-	/*width: 13.688rem;
-	height: 38px;
-    background-color: #D7725F;
-    border-color: black;
-    text-shadow: none;
-    border: 10px;
-    xborder-style: none;
-    border-radius: 4px;
-    xpadding: 1rem 1.5rem;
-    margin: 1rem 1.5rem;
-    color: white;
-    font-size: 28px;
-    xfloat: left;*/
 }
 
+
 ul {
-	background-color: #3D3840;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:10px 0px;
+    padding:0px;
+    clear:both;
+
+    
 	width: 800px;
-	margin-left: 200px;
+	
 }
 
 li {
-	margin-left: 10px;
+    background: #3D3840;
+    line-height:1.6;
+    padding:10px;
+    border:#222 solid 1px;
+    margin-left: 100px;
 	font-size: 30px;
 	color: #F8FDFF;
 }
+li:nth-child(odd) {
+    background: #3D3840;
+}
+li a {
+    font-size:small;
+}
+.delete {
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    cursor: pointer;
+    float:right;
+    font: 30px sans-serif;
+    margin: 0;
+    margin-top:2px;
+    outline: medium none;
+    overflow: visible;
+    height:38px;
+    padding:0.3em 0.3em 0 0.3em;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #2E8B57;
+    background-image: -moz-linear-gradient(center top, #4BC380, #2E8B57);
+    border: 1px solid #1D5837;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #1D5837;
+}
 
+.done {
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    cursor: pointer;
+    float:right;
+    font: 30px sans-serif;
+    margin: 0;
+    margin-top:2px;
+    outline: medium none;
+    overflow: visible;
+    height:38px;
+    padding:0.3em 0.3em 0 0.3em;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #2E8B57;
+    background-image: -moz-linear-gradient(center top, #4BC380, #2E8B57);
+    border: 1px solid #1D5837;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #1D5837;
+}
 
+form a:hover {
+    background-color: #71D09B;
+    background-image: -moz-linear-gradient(center top, #71D09B, #2E8B57);
+    border: 1px solid #1D5837;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #1D5837;
+}
+form a:active {
+    border-color: #1D5837;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+form a.delete {
+    background-color: #CD0000;
+    background-image: -moz-linear-gradient(center top, #FF2323, #CD0000);
+    border: 1px solid #890000;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #890000;
+    margin-top:0px;
+    height:38px;
+}
 
+form a.done {
+    background-color: #CD0000;
+    background-image: -moz-linear-gradient(center top, #FF2323, #CD0000);
+    border: 1px solid #890000;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #890000;
+    margin-top:0px;
+    height:38px;
+}
 
+form a.delete:hover {
+    background-color: #FF5656;
+    background-image: -moz-linear-gradient(center top, #FF5656, #CD0000);
+    border: 1px solid #890000;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #890000;
+}
+form a.delete:active {
+    border-color: #890000;
+    color: #FFFFFF;
+    text-shadow: none;
+}
 
 
 
