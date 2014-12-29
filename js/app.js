@@ -45,7 +45,7 @@ function initializeForm() {
         addItem(listItem);
 
         //delete items
-        listItem.find("a").click(function () {
+        listItem.find(".delete").click(function () {
             $(this).parent().hide('slow', function () {
                 $(this).remove();
             });
@@ -64,8 +64,10 @@ function initializeForm() {
             listItem.show('slow');
         }
         //toggle!! (sorta)
-        listItem.find("input:checkbox").click(function () {
-            this.checked ? purchasedItem(listItem) : addItem(listItem);
+        listItem.find(".done").click(function () {
+            // this.checked ? purchasedItem(listItem) : addItem(listItem);
+            $(this).remove();
+            purchasedItem(listItem);
         });
 
         // clear input and refocus

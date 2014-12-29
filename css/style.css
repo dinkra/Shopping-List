@@ -149,12 +149,13 @@ form a.delete {
 }
 
 form a.done {
-    background-color: #CD0000;
+    background-color: rgb(28, 184, 65);
     background-image: -moz-linear-gradient(center top, #FF2323, #CD0000);
-    border: 1px solid #890000;
+    border: 1px solid #1D5837;
     color: #FFFFFF;
     text-shadow: 0 -1px 0 #890000;
     margin-top:0px;
+    margin-right: 15px;
     height:38px;
 }
 
